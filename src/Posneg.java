@@ -18,9 +18,9 @@ public class Posneg {
     {
         // number to be check
         int firstNumber = -98;
-        System.out.println(firstNumber + " is "
-                + checkPosNeg(firstNumber));
-    }*/
+
+       System.out.println(firstNumber + " is "+ checkPosNeg(firstNumber));
+           }*/
     public static void main(String[] args){
         int num=98;
         if(num>0)
