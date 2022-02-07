@@ -9,7 +9,6 @@ public class qudratic {
                 System.out.println("The value of a cannot be 0.");
                 return;
             }
-//calculating discriminant (d)
             int d = b * b - 4 * a * c;
             double sqrtval = sqrt(abs(d));
             if (d > 0)
@@ -29,14 +28,10 @@ public class qudratic {
                 System.out.println(-(double)b / (2 * a) + " + i"+ sqrtval + "\n"+ -(double)b / (2 * a)+ " - i" + sqrtval);
             }
         }
-        //main method
         public static void main(String args[])
         {
-//Output 1
             int a = 1, b = 5, c = 2;
-//calling function
             calculateRoots(a, b, c);
-//Output 2: int a=1, b=1, c=1
-//Output 3: int a=1, b=-2, c=1
+
         }
 }
