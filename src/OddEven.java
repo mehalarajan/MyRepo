@@ -1,5 +1,6 @@
+import java.util.Scanner;
 public class OddEven {
-    public static void main(String[] args)
+   /* public static void main(String[] args)
     {
 
         // Declare and initializing integer variable
@@ -16,6 +17,18 @@ public class OddEven {
 
             // Print statement
             System.out.println("Number is Even");
+        }*/
+        public static void main(String[] args)
+        {
+            int num;
+            System.out.println("Enter an Integer number:");
+            Scanner input = new Scanner(System.in);
+            num = input.nextInt();
+
+            if ( num % 2 == 0 )
+                System.out.println("Entered number is even");
+            else
+                System.out.println("Entered number is odd");
         }
     }
-}
+

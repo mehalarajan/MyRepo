@@ -3,7 +3,7 @@ public class concircle {
     static double calculateArea(int x, int y)
     {
         // Declare value of pi
-        double pi = 3.1415926536;
+        double pi = 3.14;
 
         // Calculate area of outer circle
         double a= pi * x * x;

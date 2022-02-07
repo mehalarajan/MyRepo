@@ -19,6 +19,7 @@ public class Intervalamstrong {
             if(sum == i){
                 System.out.println(""+i+" is an Armstrong number.");
             }
+            
         }
     }
 

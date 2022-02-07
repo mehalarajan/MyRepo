@@ -1,8 +1,7 @@
 public class quadraticroot2 {
     public static void main(String[] args){
-        double a=2, b=11, c=5;
+        double a=2, b=10, c=5;
         double root1, root2;
-
         double d=b*b-4*a*c;
         System.out.println(d);
         if(d>0){
@@ -18,7 +17,7 @@ public class quadraticroot2 {
             double realpart= -b/ (2*a);
             double imaginarypart= Math.sqrt(-d)/(2*a);
 
-            System.out.format("root1=%.2f+%.2i and root2= %.2f-%.2i", realpart,imaginarypart);
+            System.out.format("realpart=%.2f+%.2i and imaginarypart= %.2f-%.2i", realpart,imaginarypart);
         }
     }
 
