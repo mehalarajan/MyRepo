@@ -10,8 +10,6 @@ public class Calculator {
         num2 = scanner.nextDouble();
         System.out.print("Enter an operator (+, -, *, /): ");
         char operator = scanner.next().charAt(0);
-
-        //scanner.close();
         double output;
 
         switch(operator)
@@ -32,7 +30,7 @@ public class Calculator {
                 output = num1 / num2;
                 break;
             default:
-                System.out.println("You have entered wrong operator");
+                System.out.println("You entered wrong operator");
                 return;
         }
 

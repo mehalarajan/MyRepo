@@ -1,20 +1,17 @@
 public class Powerinrecursion {
     public static void main(String[] args) {
 
-        int base = 3, powerRaised = 4;
-        int result = power(base, powerRaised);
-
-        System.out.println(base + "^" + powerRaised + "=" + result);
+        int base = 2, power = 3;
+        int result = power(base, power);
+        System.out.println(base + "^" + power + "=" + result);
     }
+    public static int power(int base, int power) {
+        if (power==0) {
+            return 1;
 
-    public static int power(int base, int powerRaised) {
-        if (powerRaised != 0) {
-
-            // recursive call to power()
-            return (base * power(base, powerRaised - 1));
         }
         else {
-            return 1;
+            return (base * power(base, power - 1));
         }
     }
         }

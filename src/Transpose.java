@@ -1,30 +1,39 @@
+import java.util.Scanner;
 public class Transpose {
     public static void main(String[] args) {
-        int row = 2, column = 3;
-        int[][] matrix = { {2, 3, 4}, {5, 6, 4} };
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter number of rows:");
+       int row=sc.nextInt();
+       System.out.println("enter number of columns:");
+       int column=sc.nextInt();
+       int[][] matrixA=new int[row][column];
+       System.out.println("enter"+(row*column)+"values:");
+       for(int i=0;i<row;i++)
+       {
+           for(int j=0;j<column;j++)
+           {
+               matrixA[i][j]=sc.nextInt();
+           }
 
-        // Display current matrix
-        display(matrix);
-
-        // Transpose the matrix
-        int[][] transpose = new int[column][row];
-        for(int i = 0; i < row; i++) {
-            for (int j = 0; j < column; j++) {
-                transpose[j][i] = matrix[i][j];
-            }
-        }
-
-        // Display transposed matrix
-        display(transpose);
-    }
-
-    public static void display(int[][] matrix) {
-        System.out.println("The matrix is: ");
-        for(int[] row : matrix) {
-            for (int column : row) {
-                System.out.print(column + "    ");
+       }
+        System.out.println("enter the matrix:");
+        for( int i=0;i<row;i++)
+        {
+            for(int j=0;j<column;j++){
+                System.out.print(matrixA[i][j]+"\t ");
             }
             System.out.println();
         }
+        System.out.println("transpose of the matrix:");
+        for(int i=0;i<column;i++)
+        {
+            for(int j=0;j<row;j++){
+                System.out.print(matrixA[j][i]+" ");
+
+            }
+            System.out.println();
+        }
+
     }
+
 }

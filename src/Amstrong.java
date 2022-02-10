@@ -1,7 +1,7 @@
 public class Amstrong {
     public static void main(String[] args) {
 
-        int number = 371, originalNumber, remainder, result = 0;
+        int number = 370, originalNumber, remainder, result = 0;
 
         originalNumber = number;
 
@@ -11,7 +11,6 @@ public class Amstrong {
             result += Math.pow(remainder, 3);
             originalNumber /= 10;
         }
-
         if(result == number)
             System.out.println(number + " is an Armstrong number.");
         else

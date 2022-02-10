@@ -1,16 +1,15 @@
 public class Gcdusingrecursion {
     public static void main(String[] args) {
-        int n1 = 366, n2 = 60;
-        int hcf = hcf(n1, n2);
+        int i = 12, j = 24;
+        int gcd = gcd(i, j);
 
-        System.out.printf("G.C.D of %d and %d is %d.", n1, n2, hcf);
+        System.out.printf("G.C.D of %d and %d is %d.", i, j, gcd);
     }
-
-    public static int hcf(int n1, int n2)
+    public static int gcd(int i, int j)
     {
-        if (n2 != 0)
-            return hcf(n2, n1 % n2);
+        if (j != 0)
+            return gcd(j, i % j);
         else
-            return n1;
+            return i;
     }
 }

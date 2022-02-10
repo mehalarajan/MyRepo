@@ -4,7 +4,6 @@ public class Factrecursion {
         int sum = addNumbers(number);
         System.out.println("Sum = " + sum);
     }
-
     public static int addNumbers(int num) {
         if (num != 0)
             return num + addNumbers(num - 1);
