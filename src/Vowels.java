@@ -1,18 +1,24 @@
+import java.util.Scanner;
 public class Vowels {
-    static void Vowel_Or_Consonant(char y)
-    {
-        if (y == 'a' || y == 'e' || y == 'i' || y == 'o'
-                || y == 'u' || y == 'A' || y == 'E' || y == 'I'
-                || y == 'O' || y == 'U')
-            System.out.println("It is a Vowel.");
-        else
-            System.out.println("It is a Consonant.");
-    }
-
-    // The Driver code
-    static public void main(String[] args)
-    {
-        Vowel_Or_Consonant('W');
-        Vowel_Or_Consonant('I');
-    }
+       public static void main(String[] args) {
+           Scanner sc = new Scanner(System.in);
+           char c = sc.next().charAt(0);
+           switch (c) {
+               case 'a':
+               case 'e':
+               case 'i':
+               case 'o':
+               case 'u':
+               case 'A':
+               case 'E':
+               case 'I':
+               case 'O':
+               case 'U':
+                   System.out.println("vowels");
+                   break;
+               default:
+                   System.out.println("consonant");
+                   break;
+           }
+       }
 }
