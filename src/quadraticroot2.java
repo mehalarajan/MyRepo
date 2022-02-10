@@ -14,10 +14,10 @@ public class quadraticroot2 {
             System.out.format("root1 =root2=%.2f",root1);
         }
         else{
-            double realpart= -b/ (2*a);
-            double imaginarypart= Math.sqrt(-d)/(2*a);
+            double real= -b/ (2*a);
+            double imaginary= Math.sqrt(-d)/(2*a);
 
-            System.out.format("realpart=%.2f+%.2i and imaginarypart= %.2f-%.2i", realpart,imaginarypart);
+            System.out.format("real=%.2f+%.2i and imaginary= %.2f-%.2i", real,imaginary);
         }
     }
 
