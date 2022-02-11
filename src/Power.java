@@ -2,13 +2,13 @@ public class Power {
     public static void main(String[] args)
     {
         int base=2;
-        int exponent=5;
+        int expo=3;
         int result=1;
-        while(exponent>0){
+        while(expo>0){
             result=result*base;
-            exponent--;
+            expo--;
         }
-        System.out.println("result="+result);
+        System.out.println(result);
 
     }
 }

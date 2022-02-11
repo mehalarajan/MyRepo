@@ -1,9 +1,7 @@
 public class
 Digitcount {
     public static void main(String[] args) {
-
-        int count = 0, num = 198650;
-
+        int count = 0, num = 198;
         while (num != 0) {
             num /= 10;
             ++count;
