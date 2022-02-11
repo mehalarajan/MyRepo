@@ -1,27 +1,24 @@
 public class Primebetw {
     public static void main(String[] args) {
 
-        int lowest= 20, highest = 50;
+        int low= 20, high = 50;
+        int num=low;
 
-        while (lowest< highest) {
-            if (checkPrimeNumber(lowest))
-                System.out.print(lowest + " ");
-
-            ++lowest;
+        while (low< high) {
+            if (checkPrimeNumber(low))
+                System.out.print(low + " ");
+            ++low;
         }
     }
-
     public static boolean checkPrimeNumber(int num) {
-        boolean flag = true;
-
+        boolean isprime = true;
         for (int i = 2; i <= num / 2; ++i) {
-
             if (num % i == 0) {
-                flag = false;
+                isprime = false;
                 break;
             }
         }
 
-        return flag;
+        return isprime;
     }
 }

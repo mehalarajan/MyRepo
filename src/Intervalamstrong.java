@@ -7,14 +7,14 @@ public class Intervalamstrong {
         num1 = sc.nextInt();
         System.out.println("Enter the second number ::");
         num2 = sc.nextInt();
-
         for (int i = num1; i<num2; i++){
-            int check, rem, sum = 0;
-            check = i;
-            while(check != 0) {
-                rem = check % 10;
-                sum = sum + (rem * rem * rem);
-                check = check / 10;
+            int originalnumber, rem, sum = 0;
+            originalnumber = i;
+            while(originalnumber != 0) {
+                rem = originalnumber % 10;
+                sum += Math.pow(rem, 3);
+                //sum = sum + (rem * rem * rem);
+                originalnumber = originalnumber / 10;
             }
             if(sum == i){
                 System.out.println(""+i+" is an Armstrong number.");

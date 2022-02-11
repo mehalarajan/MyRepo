@@ -8,33 +8,33 @@ public class Calculator {
         num1 = scanner.nextDouble();
         System.out.print("Enter second number:");
         num2 = scanner.nextDouble();
-        System.out.print("Enter an operator (+, -, *, /): ");
-        char operator = scanner.next().charAt(0);
-        double output;
+        System.out.print("Enter an symbol (+, -, *, /): ");
+        char symbol = scanner.next().charAt(0);
+        double result;
 
-        switch(operator)
+        switch(symbol)
         {
             case '+':
-                output = num1 + num2;
+                result = num1 + num2;
                 break;
 
             case '-':
-                output = num1 - num2;
+                result = num1 - num2;
                 break;
 
             case '*':
-                output = num1 * num2;
+                result = num1 * num2;
                 break;
 
             case '/':
-                output = num1 / num2;
+                result = num1 / num2;
                 break;
             default:
-                System.out.println("You entered wrong operator");
+                System.out.println("You entered wrong symbol");
                 return;
         }
 
-        System.out.println(num1+" "+operator+" "+num2+": "+output);
+        System.out.println(num1+" "+symbol+" "+num2+": "+result);
     }
 }
 

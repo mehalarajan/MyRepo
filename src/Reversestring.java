@@ -1,14 +1,15 @@
 public class Reversestring {
-    public static void main(String[] args) {
-        String sentence = "happy";
-        String reversed = reverse(sentence);
-        System.out.println("The reversed sentence is: " + reversed);
-    }
+   private static String reverse(String str) {
+       if (str == null || str.length() <= 1) {
+           return str;
+       } else {
+           return reverse(str.substring(1)) + str.charAt(0);
+       }
+   }
 
-    public static String reverse(String sentence) {
-        if (sentence.isEmpty())
-            return sentence;
-
-        return reverse(sentence.substring(1)) + sentence.charAt(0);
-    }
+   public static void main(String[] args){
+       String str="monkey";
+       String revStr= reverse(str);
+       System.out.println(revStr);
+   }
 }
