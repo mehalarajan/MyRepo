@@ -1,6 +1,10 @@
+import java.util.Scanner;
 public class Amstrong {
     public static void main(String[] args) {
-        int number = 370, originalNum, remainder, result = 0;
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter the number");
+        int number=sc.nextInt();
+        int originalNum, remainder, result = 0;
         originalNum = number;
         while (originalNum != 0)
         {
