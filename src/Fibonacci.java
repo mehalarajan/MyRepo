@@ -1,6 +1,5 @@
 public class Fibonacci {
     public static void main(String[] args) {
-
         int i = 1, n = 15, n1 = 0, n2 = 1;
         System.out.println("Fibonacci Series till " + n );
         while (i <= n) {

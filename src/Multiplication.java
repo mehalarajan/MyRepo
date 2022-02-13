@@ -1,9 +1,14 @@
+import java.util.Scanner;
 public class Multiplication {
     public static void main(String[] args) {
-        int num = 15, i = 1;
-        for(i=1;i<=10;i++)
-        {
-            System.out.printf("%d * %d = %d \n", num, i, num * i);
+        Scanner sc=new Scanner(System.in);
+        System.out.println("*******enter number for the multiplication table******");
+        int num=sc.nextInt();
+        int  i = 1;
+        while(i<=20){
+            System.out.printf("%d * %d = %d \n", i, num, i * num);
+            i++;
+
         }
     }
 }

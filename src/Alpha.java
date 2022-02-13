@@ -4,16 +4,33 @@ public class Alpha {
         Scanner sc=new Scanner(System.in);
         System.out.println("enter the character");
         char c=sc.next().charAt(0);
-       /* if( (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-                System.out.println(c + " is an alphabet.");
+        if(alphabet(c)){
+            System.out.println("it is an alphabet");
+        }
 
-           else if(c>='0'&& c<='9')
-        {
+       else if(alphanum(c)){
             System.out.println("it is a number");
-        }else
-        {
-            System.out.println("it is a symbol");
-        }*/
+        }
+        else{
+            System.out.println("it is symbol");
+        }
 
+    }
+    public static boolean alphabet(char c) {
+        if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public static boolean alphanum(char c){
+
+       if(c>='0'&& c<='9') {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }

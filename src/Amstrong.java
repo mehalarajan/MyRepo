@@ -4,6 +4,14 @@ public class Amstrong {
         Scanner sc= new Scanner(System.in);
         System.out.println("enter the number");
         int number=sc.nextInt();
+        if(amstrongnumber (number)){
+            System.out.println("it is an amstrong number");
+        }
+        else {
+            System.out.println("it is not a amstrong number");
+        }
+    }
+    public static boolean amstrongnumber(int number){
         int originalNum, remainder, result = 0;
         originalNum = number;
         while (originalNum != 0)
@@ -13,7 +21,10 @@ public class Amstrong {
             originalNum /= 10;
         }
         if(result == number)
-            System.out.println(number + " is an Armstrong number.");
+            return true;
         else
-            System.out.println(number + " is not an Armstrong number.");
-    }}
+            return false;
+    }
+
+    }
+

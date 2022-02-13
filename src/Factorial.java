@@ -1,7 +1,10 @@
+import java.util.Scanner;
 public class Factorial {
     public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the number");
+        int number=sc.nextInt();
         int i,fact=1;
-        int number=5;
         for(i=1;i<=number;i++){
             fact=fact*i;
         }
