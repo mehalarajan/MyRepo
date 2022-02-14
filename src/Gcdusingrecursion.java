@@ -1,10 +1,5 @@
 import java.util.Scanner;
 public class Gcdusingrecursion {
-    static int gcd(int a, int b){
-        if(a%b==0)
-        return b;
-        return gcd(b,a%b);
-    }
     public static void main(String[] args){
         int a,b;
         Scanner sc=new Scanner(System.in);
@@ -13,6 +8,11 @@ public class Gcdusingrecursion {
         System.out.println("enter second number");
         b=sc.nextInt();
         System.out.println(gcd(a,b));
+    }
+    static int gcd(int a, int b){
+        if(a%b==0)
+            return b;
+        return gcd(b,a%b);
     }
 
 }

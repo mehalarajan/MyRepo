@@ -20,12 +20,12 @@ public class Passingmatrixtofunction {
                 matrix2[i][j] = sc.nextInt();
             }
         }
-        System.out.println("the result is:");
+        System.out.println("the result is: " );
         int[][] result=matrixoperation(matrix1,matrix2,rows,columns);
         for(int i=0;i<rows;i++)
         {
             for(int j=0;j<columns;j++){
-                System.out.print(result[i][j]);
+                System.out.print(result[i][j]+" ");
             }
             System.out.println( );
         }
